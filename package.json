@@ -1,0 +1,33 @@
+{
+  "name": "@stdlib/math-base-special-cidentityf",
+  "version": "0.0.0",
+  "description": "Evaluate the identity function for a single-precision complex floating-point number.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-cidentityf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "identity",
+    "single",
+    "single-precision",
+    "float",
+    "float32",
+    "complex",
+    "cmplx"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}

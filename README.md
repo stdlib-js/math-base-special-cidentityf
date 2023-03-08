@@ -30,10 +30,14 @@ The [identity-function][identity-function] is defined as
 
 <!-- <equation class="equation" label="eq:identity_function" align="center" raw="f(z) = z" alt="Identity function"> -->
 
-<div class="equation" align="center" data-raw-text="f(z) = z" data-equation="eq:identity_function">
+```math
+f(z) = z
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(z) = z" data-equation="eq:identity_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@79c18caa8e6697ecbe8bcf813a8d54a470168a75/lib/node_modules/@stdlib/math/base/special/cidentityf/docs/img/equation_identity_function.svg" alt="Identity function">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -266,7 +270,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 

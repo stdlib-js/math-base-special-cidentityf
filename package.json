@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-cidentityf",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Evaluate the identity function for a single-precision complex floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@stdlib/types": "^0.1.0",
-    "@stdlib/utils-library-manifest": "^0.1.0"
+    "@stdlib/utils-library-manifest": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.1.0",

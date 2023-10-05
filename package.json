@@ -49,7 +49,7 @@
     "@stdlib/complex-real": "^0.1.0",
     "@stdlib/constants-float32-ninf": "^0.1.0",
     "@stdlib/constants-float32-pinf": "^0.1.0",
-    "@stdlib/math-base-assert-is-nanf": "^0.1.0",
+    "@stdlib/math-base-assert-is-nanf": "^0.1.1",
     "@stdlib/math-base-assert-is-negative-zerof": "^0.1.0",
     "@stdlib/math-base-assert-is-positive-zerof": "^0.1.0",
     "@stdlib/random-base-discrete-uniform": "^0.1.0",

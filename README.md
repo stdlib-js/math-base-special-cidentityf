@@ -92,8 +92,8 @@ Evaluates the [identity function][identity-function] for a single-precision [com
 
 ```javascript
 var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var real = require( '@stdlib/complex-float32-real' );
+var imag = require( '@stdlib/complex-float32-imag' );
 
 var v = cidentityf( new Complex64( -1.0, 2.0 ) );
 // returns <Complex64>
@@ -276,8 +276,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-special-cidentityf.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-base-special-cidentityf
 
-[test-image]: https://github.com/stdlib-js/math-base-special-cidentityf/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/math-base-special-cidentityf/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/math-base-special-cidentityf/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/math-base-special-cidentityf/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-special-cidentityf/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-base-special-cidentityf?branch=main

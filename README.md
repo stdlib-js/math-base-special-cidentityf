@@ -58,32 +58,14 @@ for all `z`.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-cidentityf
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var cidentityf = require( '@stdlib/math-base-special-cidentityf' );
+import cidentityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cidentityf@esm/index.mjs';
 ```
 
 #### cidentityf( z )
@@ -91,9 +73,9 @@ var cidentityf = require( '@stdlib/math-base-special-cidentityf' );
 Evaluates the [identity function][identity-function] for a single-precision [complex][@stdlib/complex/float32/ctor] floating-point number.
 
 ```javascript
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var real = require( '@stdlib/complex-float32-real' );
-var imag = require( '@stdlib/complex-float32-imag' );
+import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@esm/index.mjs';
+import real from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-real@esm/index.mjs';
+import imag from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-imag@esm/index.mjs';
 
 var v = cidentityf( new Complex64( -1.0, 2.0 ) );
 // returns <Complex64>
@@ -115,10 +97,15 @@ var im = imag( v );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
-var Complex64 = require( '@stdlib/complex-float32-ctor' );
-var cidentityf = require( '@stdlib/math-base-special-cidentityf' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
+import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@esm/index.mjs';
+import cidentityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cidentityf@esm/index.mjs';
 
 var z;
 var i;
@@ -126,6 +113,10 @@ for ( i = 0; i < 100; i++ ) {
     z = new Complex64( discreteUniform( -50, 50 ), discreteUniform( -50, 50 ) );
     console.log( 'identity(%s) = %s', z, cidentityf( z ) );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -134,93 +125,7 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/math/base/special/cidentityf.h"
-```
-
-#### stdlib_base_cidentityf( z )
-
-Evaluates the identity function for a single-precision complex floating-point number.
-
-```c
-#include <complex.h>
-
-float complex y = stdlib_base_cidentityf( 2.0f+2.0f*I );
-// returns 2.0f+2.0f*I
-```
-
-The function accepts the following arguments:
-
--   **z**: `[in] float complex` input value.
-
-```c
-float complex stdlib_base_cidentityf( const float complex z );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/math/base/special/cidentityf.h"
-#include <stdio.h>
-#include <complex.h>
-
-int main( void ) {
-    const float complex x[] = { 3.14f+1.0f*I, -3.14f-1.0f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
-
-    float complex v;
-    float complex y;
-    int i;
-    for ( i = 0; i < 4; i++ ) {
-        v = x[ i ];
-        y = stdlib_base_cidentityf( v );
-        printf( "f(%f + %f) = %f + %f\n", crealf( v ), cimagf( v ), crealf( y ), cimagf( y ) );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -246,7 +151,7 @@ int main( void ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -311,13 +216,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [identity-function]: https://en.wikipedia.org/wiki/Identity_function
 
-[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32-ctor
+[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32-ctor/tree/esm
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cidentity]: https://github.com/stdlib-js/math-base-special-cidentity
+[@stdlib/math/base/special/cidentity]: https://github.com/stdlib-js/math-base-special-cidentity/tree/esm
 
-[@stdlib/math/base/special/identityf]: https://github.com/stdlib-js/math-base-special-identityf
+[@stdlib/math/base/special/identityf]: https://github.com/stdlib-js/math-base-special-identityf/tree/esm
 
 <!-- </related-links> -->
 

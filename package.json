@@ -40,23 +40,23 @@
   },
   "dependencies": {
     "@stdlib/types": "^0.3.2",
-    "@stdlib/utils-library-manifest": "^0.2.1"
+    "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/complex-float32-ctor": "^0.0.1",
-    "@stdlib/complex-float32-imag": "^0.1.0",
-    "@stdlib/complex-float32-real": "^0.1.0",
-    "@stdlib/constants-float32-ninf": "^0.2.1",
-    "@stdlib/constants-float32-pinf": "^0.2.1",
-    "@stdlib/math-base-assert-is-nanf": "^0.2.1",
-    "@stdlib/math-base-assert-is-negative-zerof": "^0.1.2",
-    "@stdlib/math-base-assert-is-positive-zerof": "^0.1.2",
+    "@stdlib/complex-float32-ctor": "^0.0.2",
+    "@stdlib/complex-float32-imag": "^0.1.1",
+    "@stdlib/complex-float32-real": "^0.1.1",
+    "@stdlib/constants-float32-ninf": "^0.2.2",
+    "@stdlib/constants-float32-pinf": "^0.2.2",
+    "@stdlib/math-base-assert-is-nanf": "^0.2.2",
+    "@stdlib/math-base-assert-is-negative-zerof": "^0.1.3",
+    "@stdlib/math-base-assert-is-positive-zerof": "^0.1.3",
     "@stdlib/random-base-discrete-uniform": "^0.2.1",
     "@stdlib/random-base-uniform": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.1"
+    "@stdlib/bench-harness": "^0.2.2"
   },
   "engines": {
     "node": ">=0.10.0",

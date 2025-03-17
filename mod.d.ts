@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,18 +16,22 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Complex64 } from '@stdlib/types/complex';
 
 /**
-* Evaluate the identity function for a single-precision complex floating-point number.
+* Evaluates the identity function for single-precision complex floating-point number.
 *
-* @module @stdlib/math-base-special-cidentityf
+* @param z - input value
+* @returns input value
 *
 * @example
 * var Complex64 = require( '@stdlib/complex-float32-ctor' );
 * var real = require( '@stdlib/complex-float32-real' );
 * var imag = require( '@stdlib/complex-float32-imag' );
-* var cidentityf = require( '@stdlib/math-base-special-cidentityf' );
 *
 * var v = cidentityf( new Complex64( -1.0, 2.0 ) );
 * // returns <Complex64>
@@ -38,12 +42,9 @@
 * var im = imag( v );
 * // returns 2.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function cidentityf( z: Complex64 ): Complex64;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = cidentityf;

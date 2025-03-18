@@ -230,7 +230,7 @@ int main( void ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math-base/special/cidentity`][@stdlib/math/base/special/cidentity]</span><span class="delimiter">: </span><span class="description">evaluate the identity function for a double-precision complex floating-point number.</span>
+-   <span class="package-name">[`@stdlib/complex-float64/base/identity`][@stdlib/complex/float64/base/identity]</span><span class="delimiter">: </span><span class="description">evaluate the identity function for a double-precision complex floating-point number.</span>
 -   <span class="package-name">[`@stdlib/number-float32/base/identity`][@stdlib/number/float32/base/identity]</span><span class="delimiter">: </span><span class="description">evaluate the identity function for a single-precision floating-point number.</span>
 
 </section>
@@ -315,7 +315,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cidentity]: https://github.com/stdlib-js/math-base-special-cidentity
+[@stdlib/complex/float64/base/identity]: https://github.com/stdlib-js/complex-float64-base-identity
 
 [@stdlib/number/float32/base/identity]: https://github.com/stdlib-js/number-float32-base-identity
 
